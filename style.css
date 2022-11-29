@@ -93,7 +93,6 @@ i, svg {
 select {
     padding: 1rem;
     font-size: 1rem;
-    margin-left: 1rem;
 }
 
 .mute.active {
@@ -107,7 +106,6 @@ select {
 
 .tempo-slider{
     padding: 0.2rem;
-    -webkit-appearance: none;
     margin: 1rem 0rem;
     width: 100%;
     position: relative;

@@ -13,7 +13,7 @@
             <div class="controls">
                 <h1>Kick</h1>
                 <button data-track="0" class="mute kick-volume">
-                    <i class="fa-solid fa-volume-xmark"></i>
+                    <i class="fas fa-volume-mute"></i>
                 </button>
                 <select name="kick-select" id="kick-select">
                     <option value="./sounds/kick-808.wav">808 Kick</option>
@@ -35,8 +35,8 @@
         <div class="snare-track">
             <div class="controls">
                 <h1>Snare</h1>
-                <button data-track="0" class="mute snare-volume">
-                    <i class="fa-solid fa-volume-xmark"></i>
+                <button data-track="1" class="mute snare-volume">
+                    <i class="fas fa-volume-mute"></i>
                 </button>
                 <select name="snare-select" id="snare-select">
                     <option value="./sounds/snare-808.wav">808 Snare</option>
@@ -58,8 +58,8 @@
         <div class="hihat-track">
             <div class="controls">
                 <h1>Hihat</h1>
-                <button data-track="0" class="mute hihat-volume">
-                    <i class="fa-solid fa-volume-xmark"></i>
+                <button data-track="2" class="mute hihat-volume">
+                    <i class="fas fa-volume-mute"></i>
                 </button>
                 <select name="hihat-select" id="hihat-select">
                     <option value="./sounds/hihat-808.wav">808 Hihat</option>
@@ -80,15 +80,18 @@
         </div>
         <button class="play">Play</button>
         <div class="tempo">
-            <input type="range" class="tempo-slider" max="300" min="20" value="150">
+            <input type="range" class="tempo-slider" max="300" min="20" value="150"/>
             <p>Tempo: <span class="tempo-nr">150</span></p>
         </div>
     </div>
     
     <audio class="kick-sound" src="./sounds/kick-808.wav"></audio>
     <audio class="snare-sound" src="./sounds/snare-808.wav"></audio>
-    <audio class="hihat-sound" src="./sounds/khihat-808.wav"></audio>
-    <script scr="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous"></script>
-    <script scr="./app.js"></script>
+    <audio class="hihat-sound" src="./sounds/hihat-808.wav"></audio>
+
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
